@@ -1,5 +1,7 @@
 {
 	"dependencies": {
+		"@types/dotenv": "^8.2.3",
+		"dotenv": "^16.4.7",
 		"esbuild": "^0.24.0",
 		"ws": "^8.18.0"
 	},
@@ -7,6 +9,7 @@
 		"dev": "rm -rf dist && esbuild `find src \\( -name '*.ts' -o -name '*.tsx' \\)` --platform='node' --sourcemap --ignore-annotations --format='cjs' --target='es2022' --outdir='dist' && cd dist && node index.js && cd .."
 	},
 	"devDependencies": {
-		"@types/node": "^22.10.10"
+		"@types/node": "^22.10.10",
+		"@types/ws": "^8.5.14"
 	}
 }

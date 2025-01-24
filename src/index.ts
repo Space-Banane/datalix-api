@@ -1,10 +1,12 @@
 // Starting template for Applications wanting to connect to the Datalix API reading live KVM data using TypeScript and WebSockets
 
-import WebSocket from 'ws';
+import { configDotenv } from 'dotenv';
+import { WebSocket } from 'ws';
+configDotenv({path: '../.env'});
 
-const WS_URL = process.env.WS_URL!
-const WS_TOKEN = process.env.WS_TOKEN!
-const SERVICE_ID = process.env.SERVICE_ID!
+const WS_URL = process.env.WS_URL!;
+const WS_TOKEN = process.env.WS_TOKEN!;
+const SERVICE_ID = process.env.SERVICE_ID!;
 
 const ws = new WebSocket(WS_URL);
 

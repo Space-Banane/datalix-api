@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@types/dotenv':
+        specifier: ^8.2.3
+        version: 8.2.3
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.4.7
       esbuild:
         specifier: ^0.24.0
         version: 0.24.2
@@ -18,6 +24,9 @@ importers:
       '@types/node':
         specifier: ^22.10.10
         version: 22.10.10
+      '@types/ws':
+        specifier: ^8.5.14
+        version: 8.5.14
 
 packages:
 
@@ -171,8 +180,19 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/dotenv@8.2.3':
+    resolution: {integrity: sha512-g2FXjlDX/cYuc5CiQvyU/6kkbP1JtmGzh0obW50zD7OKeILVL0NSpPWLXVfqoAGQjom2/SLLx9zHq0KXvD6mbw==}
+    deprecated: This is a stub types definition. dotenv provides its own type definitions, so you do not need this installed.
+
   '@types/node@22.10.10':
     resolution: {integrity: sha512-X47y/mPNzxviAGY5TcYPtYL8JsY3kAq2n8fMmKoRCxq/c4v4pyGNCzM2R6+M5/umG4ZfHuT+sgqDYqWc9rJ6ww==}
+
+  '@types/ws@8.5.14':
+    resolution: {integrity: sha512-bd/YFLW+URhBzMXurx7lWByOu+xzU9+kb3RboOteXYDfW+tr+JZa99OyNmPINEGB/ahzKrEuc8rcv4gnpJmxTw==}
+
+  dotenv@16.4.7:
+    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+    engines: {node: '>=12'}
 
   esbuild@0.24.2:
     resolution: {integrity: sha512-+9egpBW8I3CD5XPe0n6BfT5fxLzxrlDzqydF3aviG+9ni1lDC/OvMHcxqEFV0+LANZG5R1bFMWfUrjVsdwxJvA==}
@@ -271,9 +291,19 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
+  '@types/dotenv@8.2.3':
+    dependencies:
+      dotenv: 16.4.7
+
   '@types/node@22.10.10':
     dependencies:
       undici-types: 6.20.0
+
+  '@types/ws@8.5.14':
+    dependencies:
+      '@types/node': 22.10.10
+
+  dotenv@16.4.7: {}
 
   esbuild@0.24.2:
     optionalDependencies:
