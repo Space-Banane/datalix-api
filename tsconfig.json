@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "dist",
+		"baseUrl": "dist",
+		"skipLibCheck":true
+	},
+	"include": ["./src/*"]
+}
