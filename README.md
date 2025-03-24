@@ -1,4 +1,4 @@
-# Datalix API - KVM Data Client
+# Datalix API - KVM Data Client/Examples
 
 A starting template for applications connecting to the Datalix API to read live KVM data using TypeScript and WebSockets.
 
