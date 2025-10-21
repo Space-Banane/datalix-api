@@ -39,7 +39,7 @@ Be aware that the code is a minimal example and may need to be adapted to your s
 
 ## Documentation
 
-For detailed documentation about the Datalix API, visit our [documentation portal](https://docs.datalix.com).
+For detailed documentation about the Datalix API, visit their [documentation portal](https://docs.datalix.com).
 
 ## License
 
